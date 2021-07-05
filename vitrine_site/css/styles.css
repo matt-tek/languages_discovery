@@ -1,28 +1,15 @@
 body {
     background: url(/images/header-section.jpg) no-repeat fixed;
-    /*background: #F25A29;*/
-    color: white;
     margin: 0 auto;
 }
 
 /*header*/
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: 500px;
 }
 
 header img {
     height: 300px;
-}
-
-.container {
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
 }
 
 /*a propos*/
@@ -47,37 +34,27 @@ section#about div h3 {
 }
 
 /*cocktail menu*/
-
 section#menu {
     padding: 20px 10% 20px 10%;
     background: url(/images/cocktail-section.jpg) fixed;
 }
+
 section#menu img{
     height: 200px;
 }
 
 /*class abour*/
-.hour {
-    background: url(../images/1.jpg);
-}
-
-.cocktail {
-    background: url(../images/3.jpg);
-}
-
+.hour {background: url(../images/1.jpg);}
+.cocktail {background: url(../images/3.jpg);}
 /*class cocktail-*/
 .first_row {display: flex;}
 .second_row {display: flex;}
 .cocktail-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     flex: 0.5;
     margin: 10px;
 }
 /*class for cocktail banner*/
-.dennis { background: url(../images/orange-banner.jpg);}
+.dennis {background: url(../images/orange-banner.jpg);}
 .ada {background: url(../images/cherry-banner.jpg);}
 .elon {background: url(/images/citrinus-banner.jpg);}
 .margaret {background: url(/images/mentalux-banner.jpg)}

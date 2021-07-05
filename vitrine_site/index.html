@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EpiBar</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <header>
+<body class="text-white">
+    <header class="d-flex p-2 justify-content-center align-items-center flex-column">
         <img src="images/logo.png"/>
         <h3><b>Des cocktail à la sauce tech</h3></p>
     </header>
-    <section id="about" class="container"> <!-- section au lieu de div permet d'appliquer différente section-->
+    <section id="about" class="container mb-5"> <!-- section au lieu de div permet d'appliquer différente section-->
         <div class="hour">
             <h3>9H00-12H 14H-00H</h3>
         </div>
@@ -22,29 +26,29 @@
     </section>
     <section id="menu"> <!-- liste des cocktails-->
         <div class="first_row">
-            <div class="dennis cocktail-item">
+            <div class="dennis d-flex justify-content-center align-items-center flex-column cocktail-item">
                 <p>Dennis Ritchie</p>
                 <p>9€41</p>
                 <img src="images/sunmoon.png"/>
             </div>
-            <div class="ada cocktail-item">
+            <div class="ada d-flex justify-content-center align-items-center flex-column cocktail-item">
                 <p>Ada Lovelace</p>
                 <p>9€52</p>
                 <img src="images/spicherry.png"/>
             </div>
         </div>
         <div class="second_row">
-            <div class="elon cocktail-item">
+            <div class="elon d-flex justify-content-center align-items-center flex-column cocktail-item">
                 <p>Elon Musk</p>
                 <p>8€71</p>
                 <img src="images/citrinus.png"/>
             </div>
-            <div class="margaret cocktail-item">
+            <div class="margaret d-flex justify-content-center align-items-center flex-column cocktail-item">
                 <p>Margaret Hamilton</p>
                 <p>7€36</p>
                 <img src="images/mentalux.png"/>
             </div>
-            <div class="linus cocktail-item">
+            <div class="linus d-flex justify-content-center align-items-center flex-column cocktail-item">
                 <p>Linus Torvalds</p>
                 <p>9€91</p>
                 <img src="images/cocowhip.png"/>

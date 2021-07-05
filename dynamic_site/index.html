@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Epi'arts</title>
+</head>
+<body class="container back">
+    <link rel="stylesheet" type="text/css" href="file.php">
+    <h1 class="text-center mb-5"><b>Epi'arts</b></h1>
+    <p class="mb-5">
+        Bienvenue sur le site Epi’arts, vous pourrez ici mettre en vente vos œuvres d’arts de toute époque et recevrez instantanément une estimation du prix de rachat
+    </p>
+    <form method="POST" action="file.php" class="d-flex justify-content-center">
+        <input type="text" name="name" id="name" placeholder="artwork name" required class="mr-3">
+        <select name="type" id="type" class="mr-3">
+            <option value="5">draw</option>
+            <option value="35">paint</option>
+            <option value="27">sculpture</option>
+            <option value="1000">book</option>
+            <option value="0">other</option>
+        </select>
+        <select name="year" id="year" class="mr-3">
+            <option value="100000">before 1200</option>
+            <option value="76000">Between 1201 and 1600</option>
+            <option value="32000">Between 1601 and 1800</option>
+            <option value="15000">Between 1801 ad 1999</option>
+            <option value="0">After 2000</option>
+        </select>
+        <input type="submit" value="Estimate" class="btn btn-secondary">
+    </form>
+</body>
+</html>
