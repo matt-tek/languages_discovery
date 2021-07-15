@@ -1,5 +1,5 @@
 #include <iostream>
-#include "include/Player.hpp"
+#include "../include/Player.hpp"
 
 Player::Player()
 {
@@ -13,30 +13,30 @@ Player::~Player()
 {
 }
 
-void Player::playerGainPv(int pv)
+void Player::gainPv(int &pv)
 {
     _pv += pv;
 }
 
-void Player::playerLostPv(int damage)
+void Player::lostPv(int &damage)
 {
     _pv -= damage;
     if (_pv <= 0)
         _pv = 0;
 }
 
-void Player::playerGetWeapon(std::string weapon, int atk)
+void Player::setWeapon(std::string &weapon, int &atk)
 {
     _weapon = weapon;
     _atk = atk;
 }
 
-void Player::attack(Player target, Player attacker)
+void Player::attack(Player &target)
 {
-    target.playerLostPv(attacker._atk);
+    target.lostPv(_atk);
 }
 
-bool Player::playerAlive()
+bool Player::Alive()
 {
     if (_pv > 0)
         return true;

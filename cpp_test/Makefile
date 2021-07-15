@@ -1,7 +1,7 @@
 SRC	=	main.cpp \
-		Player.cpp
+		src/Player.cpp
 
-NAME=	cpp
+NAME=	first_prog
 
 CC	=	g++
 

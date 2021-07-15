@@ -19,23 +19,15 @@ private:
     std::string _weapon;
 public:
     Player();
-    void playerGetWeapon(std::string weaponType, int atk);
-    void playerLostPv(int lp);
-    void playerGainPv(int lp);
-    void attack(Player target, Player attacker);
-    bool playerAlive(void);
-    int getPv(void)
-    {
-        return _pv;
-    }
-    int getAtk(void)
-    {
-        return _atk;
-    }
-    std::string getWeapon(void)
-    {
-        return _weapon;
-    }
+    void setWeapon(std::string &weaponType, int &atk);
+    void lostPv(int &lp);
+    void gainPv(int &lp);
+    void attack(Player &target);
+    bool Alive(void);
+    int getPv(void) { return _pv; }
+    int getAtk(void) { return _atk; }
+    int getMana(void) {return _mana; }
+    std::string getWeapon(void) { return _weapon; }
     ~Player();
 };
 
