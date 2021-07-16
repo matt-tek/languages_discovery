@@ -34,10 +34,14 @@ int main(void)
     while (enemy.Alive()) {
         std::cout << "Do you attack or defend ??" << std::endl;
         std::cin >> input;
-        if (input.compare("attack") == 0)
+        if (input.compare("attack") == 0) {  
             player.attack(enemy);
+            enemy.attack(player);
+            std::cout << "you have " << player.getPv() << " lp" << std::endl; 
+        }
         if (input.compare("defend") == 0)
             enemy.attack(player);
+            std::cout << "you have " << player.getPv() << " lp" << std::endl;
         if (!player.Alive()) {
             std::cout << "You Lose !" << std::endl;
             return (84);
