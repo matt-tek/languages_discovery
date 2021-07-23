@@ -39,9 +39,10 @@ int main(void)
             enemy.attack(player);
             std::cout << "you have " << player.getPv() << " lp" << std::endl; 
         }
-        if (input.compare("defend") == 0)
+        if (input.compare("defend") == 0) {
             enemy.attack(player);
             std::cout << "you have " << player.getPv() << " lp" << std::endl;
+        }
         if (!player.Alive()) {
             std::cout << "You Lose !" << std::endl;
             return (84);

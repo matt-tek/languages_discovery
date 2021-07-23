@@ -1,10 +1,11 @@
 body {
-    background: url(/images/header-section.jpg) no-repeat fixed;
+    background: url(../images/header-section.jpg) no-repeat fixed;
     margin: 0 auto;
 }
 
 /*header*/
 header {
+    background: url(../images/header-section.jpg) no-repeat fixed;
     height: 500px;
 }
 
@@ -36,7 +37,7 @@ section#about div h3 {
 /*cocktail menu*/
 section#menu {
     padding: 20px 10% 20px 10%;
-    background: url(/images/cocktail-section.jpg) fixed;
+    background: url(../images/cocktail-section.jpg) fixed;
 }
 
 section#menu img{
@@ -56,6 +57,6 @@ section#menu img{
 /*class for cocktail banner*/
 .dennis {background: url(../images/orange-banner.jpg);}
 .ada {background: url(../images/cherry-banner.jpg);}
-.elon {background: url(/images/citrinus-banner.jpg);}
-.margaret {background: url(/images/mentalux-banner.jpg)}
-.linus {background: url(/images/coco-banner.jpg);}
+.elon {background: url(../images/citrinus-banner.jpg);}
+.margaret {background: url(../images/mentalux-banner.jpg)}
+.linus {background: url(../images/coco-banner.jpg);}
