@@ -1,5 +1,5 @@
 # languages_discovery
-all my test on new languages
+all my test on languages i want to learn
 
 thats my repo where i experiment new languages !
 
