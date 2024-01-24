@@ -24,7 +24,7 @@ void Vol::ajouter_passager(const Passager &passager) {
 }
 
 void Vol::annuler_billet(const Passager &passager) {
-    for (int i = 0; i < this->passagers.size(); i++) {
+    for (size_t i = 0; i < this->passagers.size(); i++) {
         if (this->passagers[i].id_passager() == passager.id_passager()) {
             this->passagers.erase(this->passagers.begin() + i);
         }
@@ -37,6 +37,10 @@ int Vol::nombre_passagers() const {
 
 int Vol::lire_numero_vol() const {
     return this->numero_vol;
+}
+
+std::vector<Passager> Vol::lire_passagers() const {
+    return this->passagers;
 }
 
 void Vol::fixer_numero_vol(const int &numero_vol) {

@@ -17,6 +17,7 @@ public:
     // getters
     int nombre_passagers() const;
     int lire_numero_vol() const;
+    std::vector<Passager> lire_passagers() const;
     // setters
     void fixer_numero_vol(const int &numero_vol);
 };
