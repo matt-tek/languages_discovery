@@ -5,6 +5,7 @@
 Vol::Vol(const int &numero_vol, const int &capacite) {
     this->numero_vol = numero_vol;
     this->capacite = capacite;
+    instance_count++;
 }
 
 Vol::~Vol(){}
